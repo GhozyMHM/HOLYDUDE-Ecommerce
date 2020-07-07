@@ -1,29 +1,28 @@
 <?php
-    include "koneksidata.php";
-    session_start();
+include "koneksidata.php";
+session_start();
 
-    if (isset($_POST['submitbtn'])) {
-        $username = $_POST['username'];
-        $password1 = $_POST['password1'];
+if (isset($_POST['submitbtn'])) {
+    $username = $_POST['username'];
+    $password1 = $_POST['password1'];
 
-        $conn = mysqli_connect($server, $user, $password, $db);
-    
-        $ceklogin = mysqli_query($conn, "SELECT * FROM account WHERE Username = '$username' AND Password = '$password1'");
-    
-        if (mysqli_num_rows($ceklogin) ==1 ) {
-            $_SESSION['username'] = $username;
-            echo "<div class='alert alert-dark' role='alert'>
+    $conn = mysqli_connect($server, $user, $password, $db);
+
+    $ceklogin = mysqli_query($conn, "SELECT * FROM account WHERE Username = '$username' AND Password = '$password1'");
+
+    if (mysqli_num_rows($ceklogin) == 1) {
+        $_SESSION['username'] = $username;
+        echo "<div class='alert alert-dark' role='alert'>
             Login Success!
-          </div>";
-          echo "<meta http-equiv='refresh' content='1;url=index.php'>";
-        } else {
-            echo "<div class='alert alert-dark' role='alert'>
+            </div>";
+        echo "<meta http-equiv='refresh' content='1;url=index.php'>";
+    } else {
+        echo "<div class='alert alert-dark' role='alert'>
             Login Error!
-          </div>";
-          echo "<meta http-equiv='refresh' content='1;url=login.php'>";
-        }
-    
+            </div>";
+        echo "<meta http-equiv='refresh' content='1;url=login.php'>";
     }
+}
 
 ?>
 
@@ -46,8 +45,8 @@
 
 <body>
 
-    <script src="Bootstrap/js/jquery.js"></script> 
-    <script src="Bootstrap/js/popper.js"></script> 
+    <script src="Bootstrap/js/jquery.js"></script>
+    <script src="Bootstrap/js/popper.js"></script>
     <script src="Bootstrap/js/bootstrap.js"></script>
 
 

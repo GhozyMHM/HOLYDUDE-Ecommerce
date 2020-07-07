@@ -1,6 +1,6 @@
 #h {
-    width: 50px;
-    height: 50px;
+	width: 50px;
+	height: 50px;
 }
 
 .header-top {
@@ -146,12 +146,12 @@
 }
 
 .newslatter-form {
-    margin-bottom: 0px;
-    width: 100%;
+	margin-bottom: 0px;
+	width: 100%;
 }
 
 .newslatter-form form {
-    position: relative;
+	position: relative;
 }
 
 .newslatter-form form input {
@@ -201,8 +201,8 @@
 
 
 .product-pic-zoom {
-    margin-bottom: 35px;
-    margin-top: -60px;
+	margin-bottom: 35px;
+	margin-top: -60px;
 }
 
 .product-thumbs-track {
@@ -318,8 +318,8 @@
 }
 
 .product-details .site-btn {
-    min-width: 190px;
-    margin-bottom: 30px;
+	min-width: 190px;
+	margin-bottom: 30px;
 }
 
 .product-details .social-sharing {

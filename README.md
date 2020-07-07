@@ -1,7 +1,7 @@
 # holydude-ecommerce
 Simple e-commerce website 
 
-(Import The SQL File to your localhost for try the dynamic page)
+(Import The SQL File to your localhost to try the dynamic page and use the login & register feature)
 
 LOGIN =
 
